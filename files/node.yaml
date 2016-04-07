@@ -1,0 +1,66 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {},
+    "items": [
+        {
+            "kind": "Node",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "dhcp-15-47.nay.redhat.com",
+                "selfLink": "/api/v1/nodes/dhcp-15-47.nay.redhat.com",
+                "uid": "ce9774ce-fbcc-11e5-b8bc-0023ae9d8532",
+                "resourceVersion": "83686",
+                "creationTimestamp": "2016-04-06T07:54:36Z",
+                "labels": {
+                    "kubernetes.io/hostname": "dhcp-15-47.nay.redhat.com"
+                }
+            },
+            "spec": {
+                "externalID": "dhcp-15-47.nay.redhat.com"
+            },
+            "status": {
+                "capacity": {
+                    "cpu": "4",
+                    "memory": "3814432Ki",
+                    "pods": "40"
+                },
+                "conditions": [
+                    {
+                        "type": "Ready",
+                        "status": "True",
+                        "lastHeartbeatTime": "2016-04-07T07:51:25Z",
+                        "lastTransitionTime": "2016-04-06T07:54:36Z",
+                        "reason": "KubeletReady",
+                        "message": "kubelet is posting ready status"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "type": "LegacyHostIP",
+                        "address": "10.66.15.47"
+                    },
+                    {
+                        "type": "InternalIP",
+                        "address": "10.66.15.47"
+                    }
+                ],
+                "daemonEndpoints": {
+                    "kubeletEndpoint": {
+                        "Port": 10250
+                    }
+                },
+                "nodeInfo": {
+                    "machineID": "fab90fa2d91249e78eff33b71b3a9dfa",
+                    "systemUUID": "44454C4C-4C00-1031-8053-CAC04F4E3258",
+                    "bootID": "199768a2-c023-4c67-843d-33eac7b3b667",
+                    "kernelVersion": "3.10.0-327.13.1.el7.x86_64",
+                    "osImage": "OpenShift Enterprise",
+                    "containerRuntimeVersion": "docker://1.9.1-el7",
+                    "kubeletVersion": "v1.2.0",
+                    "kubeProxyVersion": "v1.2.0"
+                }
+            }
+        }
+    ]
+}
